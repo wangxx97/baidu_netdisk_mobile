@@ -1,0 +1,133 @@
+/* 最外层容器 */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-weight: bold;
+    color: #555;
+}
+
+.header, .footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+/* header内容 */
+.header {
+    border-bottom: 1px solid #eee;
+}
+
+/* 左侧分类 和 右侧三个图标 */
+.left-item, .right-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-menu img {
+    height: 25px;
+    margin-right: 11px;
+}
+
+.right-menu img:last-child {
+    margin-right: 0;
+}
+
+/* 主体内容 */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 15px;
+}
+
+/* 主体栏中的搜索 */
+.main-content .search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background: #F8F8F8;
+    height: 40px;
+    margin: 11px 0 11px 0;
+    padding: 12px 14px;
+    border-radius: 33px;
+}
+
+/* 搜索栏下面的列表 */
+.main-content .list-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.list-box .list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 0;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.list-box .list-item em {
+    font-size: .8em;
+    font-style: normal;
+    font-weight: normal;
+    color: #c1c1c3;
+}
+
+.list-box .list-item img {
+    height: 33px;
+    margin-right: 20px;
+}
+
+.main-content .search-box img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.main-content .search-box input {
+    border: none;
+    background: transparent;
+    height: 100%;
+    padding-left: 5px;
+    color: #b5b5b5;
+    font-weight: bold;
+}
+
+/* footer内容 */
+.footer {
+    align-items: flex-end;
+    border-top: 1px solid #eee;
+    padding: 12px 25px 1px 25px;
+    cursor: pointer;
+}
+
+.footer .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c1c1c3;
+    font-weight: lighter;
+}
+
+.footer .item:nth-child(2) {
+    color: #09A9FF;
+}
+
+.footer .item img {
+    height: 28px;
+}
